@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67911e5fce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="sticky">
+                <img src="images/muskanlogo.png"  alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><strong> FrontEnd Developer</strong></p>
+                <h1> I'm<span> Muskan </span><br>From Navi Mumbai</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container"></div>
+            <div class ="row">
+                <div class="about-col-1">
+                    <img src="images/muskaan-Photoroom.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h2 class="Subtitle">About me</h2>
+                    <p>Seeking an IT Security Consultant position with an outstanding career opportunity that will offer 
+                        a rewarding work environment along with a winning team that will fully utilize management skills.
+                        .</p>
+                    <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS </p>
+                   <p class="tab-links" onclick="opentab('EXPERIENCE')">EXPERIENCE</p>
+                   <p class="tab-links" onclick="opentab('EDUCATION')"> EDUCATION</p>
+                </div>
+                   <div class="tab-contents tab-active" id="SKILLS"> 
+                    <ul>
+                        <li> <span> Database</span> <br></li>  MY SQL , NO SQL , MONGODB</li>
+
+                        <li> <span> Web Technologies </span><br> HTML5 , CSS3 , Javascript, Bootstrap</li>
+
+                        <li> <span> Programming languages </span> <br>Data SCience , Python , Java</li>
+                    </ul>
+
+                </div>
+                  <div class="tab-contents" id="EXPERIENCE" >    
+
+                    <ul>
+                        <li> <span> 2024 - Completed </span><br> Bachelor of Science in Information Technology </li>
+           
+                    </ul>
+
+
+                  </div>     
+
+                  <div class="tab-contents" id="EDUCATION">
+
+                    <ul>
+                        <li> <span> 2021 -  HSC in Scienec </span><br> Higher Secondary Completed </li>
+
+                    </ul>
+
+
+                  </div>     
+                              
+              </div>
+
+            </div>
+            
+            <section id="services">
+                <div class="container">
+                    <h2 class="Subtitle">My Services</h2>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-database"></i>
+                            <h2>SQL Database</h2>
+                            <p>SQL databases, are systems that store collections of tables and organize structured sets of data in a tabular columns-and-rows format, similar to that of a spreadsheet.</p>
+                           
+                            <a href="https://github.com/muskanbalmiki/Certificate-sql">Certificate</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <h2>Data Science</h2>
+                            <p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.s</p>
+                           
+                            <a href="https://github.com/muskanbalmiki/Certificate-DS">Certificate</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-java"></i>
+                            <h2>JAVA</h2>
+                            
+                            <a href="#">Certificate</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+            <section id="projects">
+                <div class="container">
+                    <h3 class="Subtitle">My Projects</h3>
+                    <div class="work-list">
+                        <div class="work tooltip">
+                            <img src="images/work-1.png" alt="Work 1">
+                        
+                        <div class="layer">
+                               <h4>Crop Recommendation System</h4>
+                                <p> THis project done by using ML Algorithms</p>
+                                <a href="#"> <i class="fa-solid fa-paperclip"></i>
+                                <span class="tooltiptext">Project on my github
+                                      Please click the below link </span>
+                                 </a>
+                        </div>
+                        </div>
+                        <div class="work tooltip">
+                            <img src="images/work-2.png" alt="Work 2">
+                            <div class="layer">
+                                <h4>E-commerce </h4>
+                                <p> THis is the EKart Shopping app using HTML5,CSS3,Bootstrap</p> 
+                                <a href="https://muskanbalmiki.github.io/EKart/"> <i class="fa-solid fa-paperclip"></i>
+                                <span class="tooltiptext">Project on my github
+                                        Please click the below link </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work tooltip">
+                            <img src="images/work-3.png" alt="Work 3">
+                            <div class="layer">
+                                <h4>Shopping App</h4>
+                                <a href="#"><i class="fa-solid fa-paperclip"></i>
+                                <span class="tooltiptext">Project on my github
+                                    Please click the below link </span>
+                                </a>
+                                
+                            </div>
+                          
+
+                        </div>  
+                    
+                </div>
+            </section>
+             <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h5 class="Subtitle">Contact Me</h5>
+                            <p><i class="fa-solid fa-envelope"></i>muskanbalmiki93@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>8779753246</p>
+                            <div class ="social-icons">
+                                <a href="https://www.linkedin.com/in/muskan-balmiki-367455271/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/muskanbalmiki/"><i class="fa-brands fa-github"></i></a><br>
+                            </div>
+                                <a href ="images/muskan_Resume.docx" download class="btn">Download Resume</a>
+                            </div>
+                           <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" placeholder="Name" id="name" name="Name" required>
+                                <input type="text" placeholder="Email" id="email" name="Email" required oninput="validateEmail()">
+                                <span id="emailFeedback" style="color: red;"></span> 
+                                <textarea name="Message"id ="Message"placeholder="Message here" required ></textarea>
+                                <button class="btn">Submit </button>
+                            </form>
+
+                            <span id="msg"></span>
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+             </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; &nbsp;2024 Muskan balmiki. Made with<i class="fa-solid fa-heart-pulse"></i>by Developer</p>
+        </div>
+    </footer>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("tab-active");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("tab-active");
+        }
+
+
+            function validateEmail(){
+                var regEmail=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/;
+                if(regEmail.test(document.getElementById("email").value)){
+                    document.getElementById("emailFeedback").textContent="";
+                }else{
+                    document.getElementById("emailFeedback").textContent="Invalid Email Id";
+                }
+            }
+
+
+            function openmenu(){
+                document.getElementById("sidemenu").style.right="0px";
+            }
+
+            function closemenu(){
+                document.getElementById("sidemenu").style.right="-200px";
+            }
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzjLiU0LEivpQMjOOENrvVpTtnWdOlmiKHKWbKD6DZYyfnMpgook38C6gN_Q-uCwU1pww/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+           form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+         .then(response => {
+            document.getElementById("msg").innerHTML="Message has been sent Succesfully."
+            setTimeout(function(){
+                document.getElementById("msg").innerHTML=""},5000)
+                form.reset()
+            
+            } )
+         .catch(error => console.error('Error!', error.message))
+         })
+        
+           
+    </script>
+</body>
+</html>
